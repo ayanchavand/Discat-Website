@@ -12,12 +12,19 @@ export default function ReportBody({sendCat, sendDog}){
             console.log(res.data[0].url)
             setUrl(res.data[0].url)
         } catch(error){
-            console.log(error.message)
+            console.error(error.message)
         }
     }
 
     const handleDogClick = async () => {
-
+        const apiUrl = 'https://dog.ceo/api/breeds/image/random'
+        try{
+            const res = await axios.get(apiUrl)
+            console.log(res.data.message)
+            setUrl(res.data.message)
+        } catch(error){
+            console.error(error.message)
+        }
     }
     
     return(
