@@ -32,9 +32,9 @@ export default function ReportBody({sendCat, sendDog}){
             <div className="flex justify-center  w-full h-[600px] overflow-hidden p-10 ">
                 <img 
                 src={url}
-                className="w-full max-w-[800px] max-h-[500px] object-contain"></img>
+                className="w-full object-contain"></img>
             </div>
-            <div className="flex space-x-7 p-6 justify-center">
+            <div className="flex space-x-7 justify-center">
                 <button 
                 onClick={handleCatClick}
                 className="bg-purple-600 text-white font-bold py-4 px-8 rounded-full">
